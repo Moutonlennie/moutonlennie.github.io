@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav bar */
+.navbar-nav {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #222121;
+    font-weight: bold;
+}
+ul li a:hover{
+    color: #9DD9CD;
+}
+.afbGrootte {
+    width: auto;
+    height: 30px;
+}
+.grootte {
+    font-size: 20px;
+}
+.achtergrondBlur  {
+    backdrop-filter: blur(1px);
+}
+@media (max-width: 767px) {
+    .navbar-toggler{
+        color: transparent;
+        border: none !important;
+    }
+    .afbGrootte {
+        width: auto;
+        height: 30px;
+    }
+    .grootte a {
+        color: #fff;
+    }
+}
+@media (max-width: 992px){
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+    .navbar-collapse{
+        background-color: #9DD9CD;
+        padding: 10px;
+    }
+    .navbar-nav{
+        height: 1200px;
+    }
+    li a{
+        font-size: 30px;
+    }
+    li a img{
+        width: 40px;
+    }
+}
+
+/* Footer */
+.borderColor {
+    border-top: 2px solid #9DD9CD;
+}
+.facebook:hover {
+    color: #4267B2;
+}
+.instagram:hover {
+    color: #E1306C;
+}
+.linkedin:hover {
+    color: #0077b5;
+}
+
+/* Index */
+/* Header */
+.mTop {
+    margin-top: 12%;
+}
+.headerTekst {
+    margin-top: 17%;
+    transform: translateY(-50%);
+}
+
+.headerTekst h2 {
+    font-size: 50px;
+}
+
+.colorGreen {
+    color: #9DD9CD;
+}
+
+.img-ik {
+    width: auto;
+    height: 400px;
+}
+header button {
+    color: #9DD9CD;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #000;
+}
+header button:hover {
+    color: #fff;
+    background-color: #9DD9CD;
+    border: 2px solid transparent;
+    animation: hoverButton 0.3s ease-in-out ;
+}
+
+header button:hover::before{
+    color: #9DD9CD;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+
+.btn-center {
+    margin-left: 48%;
+    transform: translateX(-50%);
+}
+
+@keyframes hoverButton {
+     0% {
+        color: #9DD9CD;
+        background-color: transparent;
+        border: 2px solid #000;
+     }100%{
+        color: #fff;
+        background-color: #9DD9CD;
+        border: 2px solid transparent;
+     }
+}
+
+@media  screen and (max-width: 768px) {
+    .mTop {
+        margin-top: 50%;
+    }
+    .headerTekst {
+        margin-top: 30%;
+    }
+    .headerTekst h2 {
+        font-size: 40px;
+    }
+    
+}
+@media  screen and (max-width: 1100px) {
+    .mTop {
+        margin-top: 25%;
+    }
+    
+}
+
+/* Main */
+.size4 {
+    width: auto;
+    height: 300px;
+}
+.rightBorder {
+    border-right: 2px solid  #9DD9CD;
+}
+.leftBorder {
+    border-left: 2px solid #9DD9CD;
+}
+
+.rightFloat{
+    float: right;
+    text-align: right;
+}
+
+/* Contact pagina */
+/* main */
+
+.mailto {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Portfolio pagina */
+/* Main */
+
+.item1 {
+    background-image: url(assets/puzzelstukjes.png);
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.item2 {
+    background-image: url(assets/Dame.png);
+    background-position: 100%;
+    width: 300px;
+    height: 300px;
+}
+.item3 {
+    background-image: url(assets/Cars.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.item4 {
+    background-image: url(assets/Lrv.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.item5 {
+    background-image: url(assets/RiseUp.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.item6 {
+    background-image: url(assets/Bol.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+@media screen and (max-width: 768px) {
+    .item1, .item2, .item3, .item4, .item5, .item6 {
+        width: 100%;
+    }
+    
+}
+
+/* POP UP */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+#popup{
+    display: none;
+}
+.popup-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(157 217 205 / 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    width: 50%;
+    border-radius: 15px;
+}
+.close-popup{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-popup a{
+    font-size: 1.2rem;
+    background-color: #9DD9CD;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+.popup > h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.popup > p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.popup-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #9DD9CD;
+    color: #9DD9CD;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    transition: .2s all ease-in;
+}
+.popup-btn:hover{
+    background-color: #9DD9CD;
+    color: #fff;
+}
+
+
